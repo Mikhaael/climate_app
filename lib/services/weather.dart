@@ -11,8 +11,8 @@ class WeatherModel {
     var url = '$openWeatherMapUrl?q=$cityName&appid=$apiKey&units=metric';
     NetworkHelper networkHelper = NetworkHelper(url);
 
-    var weatherData = await networkHelper.getData();
-    return weatherData;
+    // var weatherData = await networkHelper.getData();
+    // return weatherData;
   }
 
   
@@ -24,9 +24,9 @@ class WeatherModel {
     NetworkHelper networkHelper = NetworkHelper(
         '$openWeatherMapUrl?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
 
-    var weatherData = await networkHelper.getData();
+    // var weatherData = await networkHelper.getData();
 
-    return weatherData;
+    // return weatherData;
   }
 
   String getWeatherIcon(int condition) {
